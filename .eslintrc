@@ -1,0 +1,23 @@
+{
+	"extends": "airbnb/base",
+	"rules": {
+		"vars-on-top": 0,
+		"no-var": 0,
+		"space-before-function-paren": 0,
+		"spaced-comment": 0,
+		"no-console": 0,
+		"key-spacing": 0,
+		"comma-dangle": 0,
+		"no-unused-vars": 0
+	},
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"globals": {
+		"process": true,
+		"module": true,
+		"require": true,
+		"__dirname": true
+	}
+}
