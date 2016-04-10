@@ -9,4 +9,5 @@ check_run() {
 
 # Example usage
 # In this example it's used to run `npm install` if package.json changed.
+check_run .nvmrc "nvm install && rm -rf node_modules && npm install"
 check_run package.json "npm install"
