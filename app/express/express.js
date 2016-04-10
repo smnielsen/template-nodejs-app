@@ -17,9 +17,4 @@ export default function(app) {
   app.use(cookieParser());
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(bodyParser.json());
-
-  // Views, used for rendering html packageJson
-  app.set('views', path.join(config.ROOT, 'app/views'));
-  app.engine('html', require('ejs').renderFile);
-  app.set('view engine', 'html');
 }

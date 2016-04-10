@@ -1,15 +1,3 @@
-/**
- * @apiDefine LoginError
- *
- * @apiError LoginError Could not login .
- *
- * @apiErrorExample Error-Response:
- *     HTTP/1.1 502 Bad Request
- *     {
- *       "error": "Bad Request",
- *       "message": "Could not login user [username]"
- *     }
- */
 
 function notFound(req, res, next) {
   console.error(`error.route.notfound: ${req.url}`);
