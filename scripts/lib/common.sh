@@ -28,6 +28,14 @@ mayfail() {
     fi
 }
 
+ok() {
+  local tip=$1
+  printf "$COLOR_GREEN"
+  printf "      ✔ $tip "
+  printf "$COLOR_END"
+  echo ""
+}
+
 head() {
   echo ""
   echo -n "-----> "
