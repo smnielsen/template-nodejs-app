@@ -5,9 +5,13 @@ ROOT_DIR=`pwd`
 source ${ROOT_DIR}/scripts/lib/common.sh
 
 # Run script
-head "Running pre push testing"
+head "Pre-push validation"
 
-info "Running tests"
+# head "Linting tests"
+# make lint
+# mayfail $? "make lint failed, please fix code and recommit"
+
+info "Unit tests"
 make test
 mayfail $? "make test failed, please fix code and recommit"
 
