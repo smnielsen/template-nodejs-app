@@ -11,7 +11,7 @@ head "Pre-push validation"
 # make lint
 # mayfail $? "make lint failed, please fix code and recommit"
 
-info "Unit tests"
+head "Unit tests"
 make test
 mayfail $? "make test failed, please fix code and recommit"
 
