@@ -5,11 +5,9 @@ lint-fix:
 	node_modules/eslint/bin/eslint.js --ext .js -c .eslintrc --fix ./app
 
 test:
-	$(MAKE) lint
 	@NODE_ENV=test ./node_modules/.bin/mocha --recursive --opts ./test/mocha/mocha.opts --require ./test/mocha/mocha.setup
 
 test-cov:
-	$(MAKE) lint
 	@NODE_ENV=test ./node_modules/.bin/babel-node \
 	./node_modules/.bin/isparta cover \
 	./node_modules/.bin/_mocha -- --opts ./test/mocha.opts
