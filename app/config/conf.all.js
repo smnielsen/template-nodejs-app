@@ -6,7 +6,7 @@ import path from 'path';
 export default {
   // Environment config
   NODE_ENV    : process.env.NODE_ENV || 'development',
-  PORT				: Number(process.env.PORT || 9000),
+  PORT				: Number(process.env.PORT || 3000),
   // Application
   ROOT				: path.join(__dirname, '../../'),
 

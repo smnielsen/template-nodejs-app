@@ -25,6 +25,7 @@
   ],
   "scripts": {
     "start": "./node_modules/.bin/nodemon app/index.js",
+    "start-prod": "export NODE_ENV=production && node app/index.js",
     "test": "make test",
     "postinstall": "./scripts/post-install.sh"
   },

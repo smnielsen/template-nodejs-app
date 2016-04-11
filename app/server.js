@@ -1,7 +1,6 @@
 'use strict';
 
 import express from 'express';
-
 import expressConfigure from './express/express';
 import config from './config';
 import routes from './routes';
